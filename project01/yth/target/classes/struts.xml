@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+
+    <package name="basicstruts2" extends="struts-default">
+       
+        <action name="addCompanyController" class="Controller.addCompanyController">
+            <result name="addcompanysuccess" type="redirect">company/addcompanysuccess.jsp</result>
+        	
+        </action>
+        <action name="queryCompanyController" class="Controller.queryCompanyController">
+            <result name="querycompanysuccess" type="redirect">company/querycompanysuccess.jsp</result>
+        	 <result name="querycompanyerror" type="redirect">company/querycompanyerror.jsp</result>
+        </action> 
+       <action name="updateCompanyController" class="Controller.updateCompanyController">
+            <result name="updatecompany2" type="redirect">company/updatecompany2.jsp</result>
+        	 <result name="updatecompanyerror" type="redirect">company/updatecompanyerror.jsp</result>
+        </action>  
+          <action name="updateCompanyController2" class="Controller.updateCompanyController2">
+            <result name="updatecompanysuccess" type="redirect">company/updatecompanysuccess.jsp</result>
+        	
+        </action>   
+          <action name="deleteCompanyController" class="Controller.deleteCompanyController">
+            <result name="deletecompanysuccess" type="redirect">company/deletecompanysuccess.jsp</result>
+        	 <result name="deletecompanyerror" type="redirect">company/deletecompanyerror.jsp</result>
+        </action> 
+       <action name="addPorderController" class="Controller.addPorderController">
+            <result name="addporder2" type="redirect">porder/addporder2.jsp</result>
+        	 <result name="addpordererror" type="redirect">porder/addpordererror.jsp</result>
+        </action>  
+          <action name="confirmPorderController" class="Controller.confirmPorderController">
+            <result name="addporderfinish" type="redirect">porder/addporderfinish.jsp</result>
+        	
+        </action>  
+           <action name="finishPorderController" class="Controller.finishPorderController">
+            <result name="unfinishpordererror" type="redirect">porder/unfinishpordererror.jsp</result>
+        	 <result name="finishpordersuccess" type="redirect">porder/finishpordersuccess.jsp</result>
+        </action> 
+           <action name="deletePorderController" class="Controller.deletePorderController">
+            <result name="deletesuccess" type="redirect">porder/deletesuccess.jsp</result>
+        	
+        </action> 
+         
+           <action name="finishController" class="Controller.finishController">
+            <result name="finishsuccess" type="redirect">porder/finishsuccess.jsp</result>
+        	
+        </action> 
+             <action name="updateUnfinishPorderController" class="Controller.updateUnfinishPorderController">
+            <result name="updateunfinishpordererror" type="redirect">porder/updateunfinishpordererror.jsp</result>
+        	 <result name="updateunfinishporder2" type="redirect">porder/updateunfinishporder2.jsp</result>
+        </action>
+         <action name="updateUnfinishPorderController2" class="Controller.updateUnfinishPorderController2">
+            <result name="updatesuccess" type="redirect">porder/updatesuccess.jsp</result>
+        	
+        </action> 
+              <action name="queryMonthController" class="Controller.queryMonthController">
+            <result name="querymontherror" type="redirect">porder/querymontherror.jsp</result>
+        	 <result name="querymonthsuccess" type="redirect">porder/querymonthsuccess.jsp</result>
+        </action>
+                 <action name="queryCompanyPorderController" class="Controller.queryCompanyPorderController">
+            <result name="querycompanypordererror" type="redirect">porder/querycompanypordererror.jsp</result>
+        	 <result name="querycompanypordersuccess" type="redirect">porder/querycompanypordersuccess.jsp</result>
+        </action>
+                   <action name="queryCompanyPorderController2" class="Controller.queryCompanyPorderController2">
+            <result name="querycompanypordererror2" type="redirect">porder/querycompanypordererror2.jsp</result>
+        	 <result name="querycompanypordersuccess2" type="redirect">porder/querycompanypordersuccess2.jsp</result>
+        </action>
+         <action name="deleteUnfinishPorderController" class="Controller.deleteUnfinishPorderController">
+            <result name="deleteunfinishpordererror" type="redirect">porder/deleteunfinishpordererror.jsp</result>
+        	 <result name="deleteunfinishpordersuccess" type="redirect">porder/deleteunfinishpordersuccess.jsp</result>
+        </action>
+    </package>
+
+</struts>

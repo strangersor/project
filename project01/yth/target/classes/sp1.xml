@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="c" class="Model.Company"></bean>
+   <bean id="p" class="Model.Porder"></bean>
+    <bean id="cd" class="Dao.CompanyDao"></bean>
+   <bean id="pd" class="Dao.PorderDao"></bean>
+   <bean id="f" class="Factory.Factory">
+   		<constructor-arg index="0" ref="c"></constructor-arg>
+   		<constructor-arg index="1" ref="p"></constructor-arg>
+   		<constructor-arg index="2" ref="cd"></constructor-arg>
+   		<constructor-arg index="3" ref="pd"></constructor-arg>
+   </bean>
+   
+</beans>
